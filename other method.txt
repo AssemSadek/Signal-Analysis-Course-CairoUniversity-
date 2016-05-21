@@ -1,0 +1,17 @@
+%     a(k)=Fo*(40*((sinc(2*k*Fo))^2)-10*((sinc(k*Fo))^2))*exp(j*-4*pi*k*Fo);
+% ao=Fo*(40*(sinc(0*2*Fo))^2-10*(sinc(0*Fo))^2);
+% syms q;
+% X1=ao + symsum(2*abs(a(q))*cos(2*pi*Fo*q*t+ phase(a(q))),q,[1 100]);
+
+% X1=ao + symsum(2*Fo*(40*(sinc(2*K*Fo))^2-10*(sinc(K*Fo))^2)*cos(2*pi*Fo*K*t+ -4*pi*K*Fo),K,[1 100]);
+
+% for k=1:length(a)
+% %     a(k)=Fo*(40*(sinc(2*k*Fo))^2-10*(sinc(k*Fo))^2);
+% % X1=X1+2*abs(a(k))*cos(2*pi*Fo*k*t+ -4*pi*k*Fo); 
+%     a(k)=Fo*(40*((sinc(2*k*Fo))^2)-10*((sinc(k*Fo))^2))*exp(j*-4*pi*k*Fo);
+%     X1=X1+2*abs(a(k))*cos(2*pi*Fo*k*t+ phase(a(k)));
+%     figure;
+%     plot(t,X1,'color','r');
+% end
+% hold on;
+% plot(t,X1,'color','r');
